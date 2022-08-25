@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --text-color: #f0f3f5;
+    --background-color: #6e3f00;
+    --accent-color: #d49466;
+}
+
+html, body {
+    height: 100%;
+}
+
+fieldset {
+    border: 1px solid #000;
+    margin-top: 40px;
+    width: 300px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: absolute;
+    top: 30%;
+    left: 42%;
+}
+
+fieldset legend {
+    text-align: center;
+}
+
+.email {
+    border: none;
+    border-bottom: 1px solid #000;
+    width: 160px;
+    height: 30px;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+.email:focus {
+    outline: none;
+}
+
+.pw {
+    border: none;
+    border-bottom: 1px solid #000;
+    width: 160px;
+    height: 30px;
+    padding-top: 10px;
+}
+
+.pw {
+    outline: none;
+}
+
+.login_btn {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+
+}
+
+.btn {
+    width: 130px;
+    height: 40px;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+                    7px 7px 20px 0px rgba(0,0,0,.1),
+                    4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+
+.submit {
+    background: var(--background-color);
+    background: linear-gradient(0deg, rgb(110, 63, 0, 1) 0%, rgb(230, 197, 154) 100%);
+    border: none;
+}
+
+.submit:before {
+    height: 0%;
+    width: 2px;
+}
+
+.submit:hover {
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}

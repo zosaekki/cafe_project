@@ -1,0 +1,208 @@
+@font-face {
+    font-family: 'HallymGothic-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2204@1.0/HallymGothic-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family: 'SUIT-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --text-color: #f0f3f5;
+    --background-color: #6e3f00;
+    --accent-color: #d49466;
+}
+
+* { box-sizing: border-box; 
+    padding: 0; 
+    margin: 0; 
+    list-style: none;
+}
+
+html, body {
+    height: 100%;
+    /* background-color: #edd2b5; */
+}
+
+
+.aligin::-webkit-input-placeholder {
+    text-align: right;
+}
+
+.img{
+    background-image: url(../img/search.svg);
+    background-size: 12px;
+    background-position: 5px center;
+    padding-left: 25px;
+    border: 1px solid #2e3238;
+    width: 12%;
+    height: 20px;
+    box-sizing: border-box;
+    outline: none;
+    background-repeat: no-repeat;
+}
+
+a { 
+    text-decoration: none; 
+    color: #000;
+}
+
+a:hover {
+    color:#ccc;
+}
+
+aside {
+    box-sizing: border-box;
+    float: left;
+    height: 100%;
+    width: 150px;
+    overflow: auto;
+    padding: 10px 10px;
+    box-shadow: 1px 1px 10px var(--background-color);
+}
+
+h2 {
+    color: var(--background-color);
+    font-family:'HallymGothic-Regular';
+    padding-top : 30px;
+    padding-bottom: 30px;
+    font-size: 30px;
+}
+
+aside h2 {
+    text-align: center;
+    font-size: 26px;
+    padding-top: 10px;
+    padding-bottom: 0;
+    margin-bottom: 30px;
+}
+
+aside div {
+    margin-top: 16px;
+}
+
+aside a {
+    padding-left: 18px;
+    font-size: 16px;
+    font-family: 'SUIT-Medium';
+}
+
+.login_user {
+    font-family: 'SUIT-Medium';
+    margin-bottom: 14px;
+    padding-bottom: 2px;
+    font-weight: bold;
+    color: rgb(75, 75, 75)
+}
+
+.container {
+    text-align: center;
+    width: 500px;
+    align-items: center;
+    margin: 20px auto;
+
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.table tr {
+    height: 65px;
+}
+
+.table th {
+    text-align: left;
+    border-bottom: 1px solid var(--background-color);
+    font-family: 'SUIT-Medium';
+}
+
+.table td {
+    padding-left: 20px;
+    border-bottom: 1px solid var(--background-color);
+    text-align: left;
+}
+
+.table input, select{
+    padding: 10px;
+    border: none;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+                    7px 7px 20px 0px rgba(0,0,0,.1),
+                    4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+  
+.submit {
+    background: var(--background-color);
+    background: linear-gradient(0deg, rgb(110, 63, 0, 1) 0%, rgb(230, 197, 154) 100%);
+    border: none;
+}
+
+.submit:before {
+    height: 0%;
+    width: 2px;
+}
+
+.submit:hover {
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}
+
+.filebox .upload-name {
+    display: inline-block;
+    height: 30px;
+    padding: 0 10px;
+    vertical-align: middle;
+    width: 75%;
+    color: #999999;
+}
+
+.filebox label {
+    display: inline-block;
+    padding: 5px 10px;
+    color: #ffffff;
+    vertical-align: middle;
+    background-color: var(--background-color);
+    cursor: pointer;
+    height: 30px;
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+.filebox input[type="file"] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+}

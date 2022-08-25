@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.cafe_search {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.search_input {
+    width: 150px;
+    height: 30px;
+    border-style: none;
+    border-bottom: 1px solid #000;
+}
+
+.search_input:focus {
+    outline: none;
+}
+
+.submit_input {
+    border-style: none;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+}
+
+.list2_cafe_ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.box .img {
+    margin-right: 50px;
+}
+
+.li {
+    margin-top: 30px;
+}
+
+.paging {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 20px;
+}
